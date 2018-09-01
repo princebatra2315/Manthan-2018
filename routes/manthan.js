@@ -8,6 +8,9 @@ var expressValidator = require('express-validator');
 router.get('/',function(req,res){
 	res.render('manthan', {message: req.flash('RegisterMessage')});
 });
+router.get('/success',function(req,res){
+res.render('thankyou');
+});
 
 router.post('/',function(req,res){
 
@@ -49,7 +52,7 @@ var errors = req.validationErrors();
 			else
 			{
                 mail_handler(user.email,user.name);
-                res.render('thankyou');
+                res.redirect('/success');
 			}
 	});
 	}
