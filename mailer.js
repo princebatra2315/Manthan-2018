@@ -19,7 +19,7 @@ var mail_handler = ((ToSend,ToSendName) => {
         to: ToSend,// list of receivers
         subject: 'Manthan', // Subject line
         text: 'Hello world?', // plain text body
-        html: `<p>Hi, <b>${ToSendName}</b><br><p>Thank you for applying in the Manthan 2018 at Manan.We have received your application.<p>Best Regards,</p><p>Prince Batra</p><p>Manan</p>` // html body
+        html: `<p>Thankyou <b>${ToSendName}</b>!<p>You have been registered for MANTHAN.</p><p>Here's what you'll need to know before the test :</p><br><p>1) The test will include aptitude and coding questions.</p><p>2) You will be given 60 minutes to solve the test. Try to solve as many problems as you can.</p><p>3) The complete audition process would be fair and transparent. </p><br><p>ALL THE BEST ! </p><p>See you on 6 September 18.</p><br><p>Regards,</p><p>Manan - A Techno Surge</p>` // html body
     };
 
     // send mail with defined transport object

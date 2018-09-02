@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://prince:prince2315@ds139632.mlab.com:39632/manthan')
+mongoose.connect('mongodb://prince:prince2315@ds139632.mlab.com:39632/manthan', { useNewUrlParser: true })
 
 var db = mongoose.connect
 
