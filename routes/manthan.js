@@ -15,7 +15,6 @@ router.get('/failure',function(req,res){
 	res.render('failure');
 });
 router.post('/',function(req,res){
-
 	var f_name = req.body.name;
 	var f_rollno = req.body.rollno;
 	var f_branch = req.body.branch;

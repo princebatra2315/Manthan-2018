@@ -62,7 +62,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 
 app.use('/*',function(req,res){
-  res.send("404 Error");
+  res.render('404');
 });
 var port = process.env.PORT || 3000
 app.listen(port, function() {
