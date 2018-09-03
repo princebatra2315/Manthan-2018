@@ -8,14 +8,14 @@ var mail_handler = ((ToSend,ToSendName) => {
     var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'princebatra2315@gmail.com',
-    pass: 'hellogeek@'
+    user: 'manantechnosurge@gmail.com',
+    pass: 'Uranium238'
   }
 });
 
     // setup email data with unicode symbols
     let mailOptions = {
-        from: '"MANAN" <princebatra2315@gmail.com>', // sender address
+        from: '"MANAN" <manantechnosurge@gmail.com>', // sender address
         to: ToSend,// list of receivers
         subject: 'Manthan', // Subject line
         text: 'Hello world?', // plain text body
