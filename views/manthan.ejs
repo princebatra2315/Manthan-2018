@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="./css/manthan.css">
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script type="text/javascript">
+      setTimeout(function() {
+       $('.msg').fadeOut();
+      }, 5000 );
+    </script>
     <title>Registration | Manthan 2018</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -25,6 +30,11 @@
 
   </head>
   <body>
+    <% if (message.length > 0) { %>
+    <% message.forEach(function(error_message){ %>
+    <div class="alert alert-info msg"><%= error_message.msg %></div>
+    <% }); %>
+    <% } %>
     <div class="py-2">
 
       <div class="container-fluid">
