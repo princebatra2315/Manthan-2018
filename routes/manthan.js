@@ -36,6 +36,7 @@ router.post('/',function(req,res){
     var errors = req.validationErrors();
 	if(errors)
 	{
+		console.log(errors);
         req.flash('RegisterMessage', errors);
         res.render('manthan', {message: req.flash('RegisterMessage')});
 	}
