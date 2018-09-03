@@ -17,8 +17,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false })) 
 
 // Mongoose Connection 
-//mongoose.connect('mongodb://princebatra2315:238Uranium@ds141932.mlab.com:41932/manthan2018', { useNewUrlParser: true })
-mongoose.connect('mongodb://prince:prince2315@ds139632.mlab.com:39632/manthan', { useNewUrlParser: true })
+mongoose.connect('mongodb://princebatra2315:238Uranium@ds141932.mlab.com:41932/manthan2018', { useNewUrlParser: true })
+// mongoose.connect('mongodb://prince:prince2315@ds139632.mlab.com:39632/manthan', { useNewUrlParser: true })
 
 var db = mongoose.connection;
 
