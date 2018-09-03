@@ -1,83 +1,338 @@
-body{
-  color: white;
+@font-face {
+    font-family: D-DIN;
+    src: url("../assets/fonts/d-din/D-DIN.otf") format("opentype");
 }
-#particles {
-  width: 100%;
-  height: 100%;
-  background: #00356B;
-  position: fixed;
-  z-index: -1;
+@font-face {
+    font-family: D-DINCondensed;
+    src: url("../assets/fonts/d-din/D-DINCondensed.otf") format("opentype");
+}
+@font-face {
+    font-family: Helvetica-Light;
+    src: url("../assets/fonts/helvetica-light/Helvetica-Light.otf") format("opentype");
+}
+@font-face {
+    font-family: D-DINCondensed-Bold;
+    font-weight: bold;
+    src: url("../assets/fonts/d-din/D-DINCondensed-Bold.otf") format("opentype");
 }
 
-#particles canvas{
-  display: block;
-  vertical-align: bottom;
+/* remove blue bootstrap shadow */
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active,
+select,
+.uneditable-input:focus {
+  box-shadow: none !important;
+  outline: 0 none;
+}
+.input-group-text{
+  color: white;
+  font-size: 21px;
+  font-weight: bold;
+  background-color: #ACE9FE;
+  border: 2px solid white;
+  border-right: 0px;
+  border-radius: 8px 0 0 8px;
+}
+.input-group input[type="text"]{
+  border-radius: 0 8px 8px 0 !important;
+}
+
+body{
+  color: white;
+  background-color: #ACE9FE;
+}
+
+.manthan2018{
+  font-family: D-DINCondensed-Bold;
+  font-weight: bold;
+  font-size: 55px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+.manthan-span{
+  color: #3A6E86;
+}
+
+.right{
+  margin-left: 60px;
+}
+.registeration{
+  color: #50809D;
+  text-align: left;
+  font-family: D-DINCondensed-Bold;
+  font-weight: bold;
+  font-size: 36px;
+}
+.right .registeration-p{
+  font-family: D-DINCondensed-Bold;
+  font-weight: bold;
+  font-size: 18px;
 }
 .inner-form-container{
-  border: 1px solid #fff;
-  border-radius: 0.5rem;
+  border: 3px solid white;
+  border-radius: 25px !important;
   padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.15);
-  /* background-color: transparent; */
-  box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.4);
+  margin: 0 0 0 5rem;
 }
 .box{
   z-index: 2;
 }
 form label{
-  font-size: 1.2rem;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: D-DINCondensed-Bold;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.form-group{
+  margin-bottom: 0.5rem;
 }
 input, select, textarea{
-  /* background-color: #00356B22 !important; */
   background-color: transparent !important;
   color: white !important;
+  border: 2px solid white !important;
+  border-radius: 8px !important;
+  /* font-size: 2rem; */
 }
-option{
-  background-color: #00356BCC !important;
-  color: white !important;
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+  height: auto;
+  font-size: 21px !important;
+  font-family: D-DINCondensed-Bold;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+select option{
+  background: #ACE9FE !important;
+  font-size: 21px !important;
+  font-family: D-DINCondensed-Bold;
+  font-weight: bold;
+}
+select option[disabled]{
+  color: rgb(90, 154, 158);
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #bbb !important;
+    color: #FFFa !important;
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #bbb !important;
+    color: #FFFa !important;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #bbb !important;
+    color: #FFFa !important;
 }
 .incomplete-msg{
   font-size: 0.9rem;
   font-style: italic;
 }
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #80dfff;
+}
+
+/* When the radio button is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #80dfff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.checkbox-container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
 .submit-btn{
   margin: auto;
   display: block;
   border-radius: 0;
-  border: 1px solid white;
+  border: 2px solid white;
   background-color: transparent;
   color: white;
-  padding: 10px 50px;
+  padding: 8px 50px;
   text-transform: uppercase;
   font-weight: 500;
+  font-size: 25px;
+  font-family: D-DINCondensed-Bold;
+  font-weight: bold;
 }
 .submit-btn:hover{
-  color: #00356B;
+  color: #80dfff;
   background-color: #ffffffaa;
+  border-color: #80dfff;
 }
-footer{
-  border-top: 1px solid white;
-  background-color: rgba(255, 255, 255, 0.1);
+
+/* right side */
+.manan{
+  margin: 0 5rem 0 7rem;
+}
+
+.about, .a-techno-surge{
+  font-family: D-DINCondensed-Bold;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 34px;
+}
+.about{
+  color: #477FA6;
+}
+.a-techno-surge{
   color: white;
 }
+.about-p{
+  font-family: Helvetica-Light;
+  font-size: 20px;
+  color: #194B6D;
+  text-align: center;
+}
+
+.thank{
+  font-family: D-DINCondensed-Bold;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+
+
+footer{
+  color: white;
+}
+footer .footer-heading{
+  font-family: D-DINCondensed-Bold;
+  font-weight: bold;
+  font-size: 22px;
+}
 footer a{
-  color: cyan;
+  color: white;
 }
 footer a:hover{
   color: white;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 footer a:visited{
-  color: cyan;
+  color: white;
+}
+footer a, footer .contact{
+  font-family: D-DIN;
+  font-size: 16px;
+}
+#footer-img-mobile{
+  pointer-events: none;
+  display: none;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+#footer-img{
+  pointer-events: none;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+.manthan-header{
+  text-align: center;
+}
+.right{
+  margin: 0;
+}
+
+
+@media screen and (max-width: 700px){
+  .inner-form-container{
+    margin: 0;
+  }
+  .manan{
+    margin: 0;
+  }
+  #footer-img{
+    display: none;
+  }
+  #footer-img-mobile{
+    display: block;
+  }
+}
+@media screen and (max-width: 992px) {
+  .manan{
+    display: none;
+  }
+  .manthan-header{
+    text-align: center;
+  }
+  .right{
+    margin: 0;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 700px){
+  .inner-form-container{
+    margin: 0 5rem;
+  }
+  .manan{
+    margin: 0 5rem;
+  }
 }

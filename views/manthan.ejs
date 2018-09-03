@@ -12,56 +12,54 @@
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <title>Register | Manthan</title>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-92029222-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-92029222-2');
-</script>
-
   </head>
   <body>
-    <div id="particles"></div>
-    <div id="form-section" class="py-5">
-      <div class="container">
-        <div class="form-container">
-          <div class="row no-gutters">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-              <div class="inner-form-container">
-                <form action="/" method="post" class="w-100 p-1">
-                  <div class="form-group">
-                    <label for="first-name">Name*</label>
-                    <input type="text" name="name" id="first-name" class="form-control" placeholder="Elon Musk" required>
-                    <!-- <span class="incomplete-msg">Please complete this required field.</span> -->
-                  </div>
+    <div class="py-2">
 
-                  <div class="form-group">
-                    <label for="roll-no">Roll No.*</label>
-                    <input type="text" name="rollno" id="roll-no" class="form-control" placeholder="CE-4109-2K16" required>
-                    <!-- <span class="incomplete-msg">Please complete this required field.</span> -->
-                  </div>
+      <div class="container-fluid">
+        <div class="row no-gutters">
+          <div class="col-lg-6">
 
-                  <div class="form-group">
-                    <label for="branch">Branch*</label>
-                    <input type="text" name="branch" id="branch" class="form-control" placeholder="CE" required>
-                    <!-- <span class="incomplete-msg">Please complete this required field.</span> -->
-                  </div>
+            <div class="manthan-header">
+              <div class="manthan2018">
+                <!-- <img src="./images/manthan_logo.svg" alt="manthan logo"> -->
+                <span class="manthan-span">Man</span>th<span class="manthan-span">an</span> 2018
+              </div>
+              <div class="right">
+                <span class="registeration">Registeration</span>
+                <p class="registeration-p">Fill the details to register yourself for Manthan 2018.</p>
+              </div>
+            </div>
 
-                  <div class="form-group">
-                    <label for="year">Year<sub> *Auditions for first year will be held later*</sub></label>
-                    <select class="form-control" name="year" id="year" required>
-                      <option class="form-control" value="" disabled selected>-Please Select-</option>
-                      <option value="2">Second</option>
-                      <option value="3">Third</option>
-                    </select>
-                    <!-- <span class="incomplete-msg">Please complete this required field.</span> -->
-                  </div>
+            <div class="inner-form-container">
+              <form action='/' method="post" class="w-100 p-1">
+                <div class="form-group">
+                  <label for="first-name">Name*</label>
+                  <input type="text" name="name" id="first-name" class="form-control" placeholder="Elon Musk" required><!-- <span class="incomplete-msg">Please complete this required field.</span> -->
+                </div>
 
-                  <div class="form-group">
+                <div class="form-group">
+                  <label for="roll-no">Roll No.*</label>
+                  <input type="text" name="rollno" id="roll-no" class="form-control" placeholder="CE-4109-2K16" required><!-- <span class="incomplete-msg">Please complete this required field.</span> -->
+                </div>
+
+                <div class="form-group">
+                  <label for="branch">Branch*</label>
+                  <input type="text" name="branch" id="branch" class="form-control" placeholder="CE" required>
+                    <!-- <span class="incomplete-msg">Please complete this required field.</span> -->
+                </div>
+
+                <div class="form-group">
+                  <label for="year">Year<sub> *Auditions for first year will be held later*</sub></label>
+                    <select class="form-control" id="year" required>
+                    <option class="form-control" value="" disabled selected>-Please Select-</option>
+                    <option value="2">Second</option>
+                    <option value="3">Third</option>
+                  </select>
+                  <!-- <span class="incomplete-msg">Please complete this required field.</span> -->
+                </div>
+
+                <div class="form-group">
                     <label for="email">Email*</label>
                     <input type="email" name="email" class="form-control" id="email" placeholder="manantechnosurge@gmail.com" required>
                     <!-- <span class="incomplete-msg">Please complete this required field.</span> -->
@@ -130,57 +128,75 @@
                     <!-- <span class="incomplete-msg">Please complete this required field.</span> -->
                   </div>
 
-                  <div class="form-check mt-2 custom-control">
-                    <input class="form-check-input" name="club" type="checkbox" id="other-club" value="part-of-other-club" style="margin-top: 10px;">
-                    <label class="form-check-label" for="other-club">
-                      I am also a member of some other club.
-                    </label>
-                  </div>
+                <div>
+                  <label class="form-check-label">
+                    Are you already a member of some other club.
+                  </label>
+                  <label class="checkbox-container">No
+                    <input type="radio" name="club" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox-container">Yes
+                    <input type="radio" name="club" name="member">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
 
-                  <button class="btn btn-outline-secondary submit-btn images-btn mt-4" type="submit" name="button">Submit</button>
-                </form>
-              </div> <!-- /inner-form-container -->
+                <button class="btn btn-outline-secondary submit-btn images-btn mt-4" type="submit" name="button">Submit</button>
+              </form>
+            </div> <!-- /inner-form-container -->
+          </div>
+          <div class="col-lg-6">
+            <div class="manan text-center pt-4">
+              <div class="about">About</div>
+              <div class="a-techno-surge">Manan: A Techno Surge</div>
+              <p class="about-p pt-3">
+                Manan, the Technical Society of YMCA University of Science and Technology, believes in rising by the means of learning ever so more. The word Manan comes from Sanskrit and it means deep thought, contemplation, or profound reflection and that's why each member in the society believes in practical implementation of the technology learned. We are proud of our culture wherein we share our knowledge between people to gather more perspective towards things.
+              </p>
             </div>
           </div>
-          <div class="col-md-2"></div>
-        </div> <!-- /form-container -->
+        </div>
       </div>
     </div>
 
-    <footer class="py-2">
-      <div class="container">
+    <footer class="py-3 mt-2">
+      <div class="container-fluid">
         <div class="row no-gutters">
-          <div class="col-md-2"></div>
-          <div class="col-md-4">
+          <!-- <div class="col-md-1"></div> -->
+          <div class="col-md-3">
             <div class="text-center contact py-3">
-              <p>Contact:</p>
-              <div class="m-2">
+              <p class="footer-heading">Contact:</p>
+              <div class="m-2 contact">
                 Prince (9034731981)
               </div>
-              <div class="m-2">
+              <div class="m-2 contact">
                 Neha (9711917480)
               </div>
-              <div class="m-2">
+              <div class="m-2 contact">
                 Shubham (7840844065)
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <div class="text-center py-3">
-              <p>Follow us on:</p>
+              <p class="footer-heading">Follow us on:</p>
               <div class="m-2"><a href="https://www.facebook.com/Manan.Ymcaust/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></div>
-              <div class="m-2"><a href="https://www.instagram.com/manantechnosurge/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></div>
+              <div class="m-2"><a href="https://www.instagram.com/manantechnosurge/" target="_blank"><i class="fab fa-instagram"></i> Instragram</a></div>
               <div class="m-2"><a href="http://manantechnosurge.com/" target="_blank"><i class="fas fa-link"></i> Manan Official Website</a></div>
             </div>
           </div>
-          <div class="col-md-2"></div>
+          <div class="col-md-6"></div>
         </div>
       </div>
     </footer>
 
+    <img id="footer-img" src="./images/back_desktop_footer.png" alt="clouds image">
+    <img id="footer-img-mobile" src="./images/back_mobile_bottom_footer.png" alt="clouds and mountain image">
+
+    <br><br><br><br><br><br><br>
+
     <!-- Optional JavaScript -->
-    <script src="./js/particles.min.js"></script>
-    <script src="./js/app.js"></script>
+    <!-- <script src="./js/app.js"></script> -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
