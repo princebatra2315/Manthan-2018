@@ -286,9 +286,9 @@ footer a, footer .contact{
   pointer-events: none;
   display: none;
   width: 100%;
-  position: fixed;
-  bottom: 0;
-}
+  /*position: fixed;
+  bottom: 0;*/
+  }
 #footer-img{
   pointer-events: none;
   width: 100%;
@@ -334,5 +334,10 @@ footer a, footer .contact{
   }
   .manan{
     margin: 0 5rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  footer{
+    margin-bottom: 10rem !important;
   }
 }
