@@ -1,0 +1,78 @@
+
+
+/* Manan, the Technical: */
+font-family: Helvetica-Light;
+font-size: 20px;
+color: #194B6D;
+text-align: center;
+
+/* ABOUT MANAN : A TECH: */
+font-family: DINCondensed-Bold;
+font-size: 30px;
+color: #477FA6;
+text-align: center;
+
+
+/* Registeration: */
+font-family: DINCondensed-Bold;
+font-size: 36px;
+color: #50809D;
+text-align: left;
+
+/* Fill the details to: */
+font-family: DINCondensed-Bold;
+font-size: 18px;
+color: #FFFFFF;
+text-align: left;
+
+/* Background: */
+color : #ACE9FE
+
+
+/* Rectangle: */
+border: 3px solid #FFFFFF;
+border-radius: 25px;
+
+/* Rectangle 2 Copy 3: */
+border: 2px solid #FFFFFF;
+border-radius: 10px;
+
+/* Name: */
+font-family: DINCondensed-Bold;
+font-size: 30px;
+color: #FFFFFF;
+text-align: left;
+
+/* Roll No.: */
+font-family: DINCondensed-Bold;
+font-size: 30px;
+color: #FFFFFF;
+text-align: left;
+
+/* Branch: */
+font-family: DINCondensed-Bold;
+font-size: 30px;
+color: #FFFFFF;
+text-align: left;
+
+/* Year: */
+font-family: DINCondensed-Bold;
+font-size: 30px;
+color: #FFFFFF;
+text-align: left;
+
+/* Rectangle 2: */
+border: 2px solid #FFFFFF;
+border-radius: 10px;
+
+/* Rectangle 2 Copy: */
+border: 2px solid #FFFFFF;
+border-radius: 10px;
+
+/* Rectangle 2 Copy 2: */
+border: 2px solid #FFFFFF;
+border-radius: 10px;
+
+
+
+

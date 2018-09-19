@@ -1,0 +1,131 @@
+@font-face {
+    font-family: D-DIN;
+    src: url("../assets/fonts/d-din/D-DIN.otf") format("opentype");
+}
+@font-face {
+    font-family: D-DINCondensed;
+    src: url("../assets/fonts/d-din/D-DINCondensed.otf") format("opentype");
+}
+@font-face {
+    font-family: Helvetica-Light;
+    src: url("../assets/fonts/helvetica-light/Helvetica-Light.otf") format("opentype");
+}
+@font-face {
+    font-family: D-DINCondensed-Bold;
+    font-weight: bold;
+    src: url("../assets/fonts/d-din/D-DINCondensed-Bold.otf") format("opentype");
+}
+
+body{
+  color: white;
+  background-color: #ACE9FE;
+}
+
+.manthan2018{
+  font-family: D-DINCondensed-Bold;
+  font-weight: bold;
+  font-size: 55px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+.manthan-span{
+  color: #3A6E86;
+}
+.leaderboard{
+  color: #50809D;
+  text-align: left;
+  font-family: D-DINCondensed-Bold;
+  font-weight: bold;
+  font-size: 36px;
+}
+.rules li, .rules h5{
+  color: #3A6E86;
+}
+.thead-custom{
+  background-color: #4C809Faa;
+}
+tbody{
+  background-color: #50809D77;
+}
+
+footer{
+  color: #50809D;
+}
+footer .footer-heading{
+  font-family: D-DINCondensed-Bold;
+  font-weight: bold;
+  font-size: 22px;
+}
+footer a{
+  color: #50809D;
+}
+footer a:hover{
+  color: #50809D;
+  /* text-decoration: none; */
+}
+footer a:visited{
+  color: #50809D;
+}
+footer a, footer .contact{
+  font-family: D-DIN;
+  font-size: 16px;
+}
+#footer-img-mobile{
+  display: none;
+  pointer-events: none;
+  width: 100%;
+  /* position: fixed; */
+  /* bottom: 0; */
+}
+#footer-img{
+  pointer-events: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.manthan-header{
+  text-align: center;
+}
+.right{
+  margin: 0;
+}
+
+
+@media screen and (max-width: 700px){
+  .inner-form-container{
+    margin: 0;
+  }
+  .manan{
+    margin: 0;
+  }
+  #footer-img{
+    display: none;
+  }
+  #footer-img-mobile{
+    display: block;
+  }
+}
+@media screen and (max-width: 992px) {
+  .manan{
+    display: none;
+  }
+  .manthan-header{
+    text-align: center;
+  }
+  .right{
+    margin: 0;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 700px){
+  .inner-form-container{
+    margin: 0 5rem;
+  }
+  .manan{
+    margin: 0 5rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  footer{
+    margin-bottom: 10rem !important;
+  }
+}

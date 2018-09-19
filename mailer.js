@@ -9,7 +9,7 @@ var mail_handler = ((ToSend,ToSendName) => {
   service: 'gmail',
   auth: {
     user: 'princebatra2315@gmail.com',
-    pass: 'hellogeek@123'
+    pass: '***********'
   }
 });
 
