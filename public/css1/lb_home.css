@@ -31,7 +31,12 @@ body{
 .manthan-span{
   color: #3A6E86;
 }
-
+.manthan-span2{
+  color: white;
+}
+#home_link{
+  text-decoration: none;
+}
 .leaderboard{
   color: #50809D;
   text-align: left;
